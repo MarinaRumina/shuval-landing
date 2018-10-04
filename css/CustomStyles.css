@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'OpenSansHebrew-Regular';
+    src: url('../fonts/OpenSansHebrew-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSansHebrew-Bold';
+    src: url('../fonts/OpenSansHebrew-Bold.ttf') format('truetype');
+}
+
+body {
+    direction: rtl;
+    line-height: 24px;
+}
+
+body * {
+    direction: rtl;
+    font-family: OpenSansHebrew-Regular;
+    text-align: right;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+a {
+    color: #313131;
+}
+
+p {
+    margin-top: 10px !important;
+}
+
+strong {
+    font-family: 'OpenSansHebrew-Bold';
+}
+
+.eng * {
+    direction: ltr;
+}
+
+navbar {
+    top: 0 !important;
+}
+
+.intro-section {
+    background-color: blue;
+}
+
+.intro-section h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+header .intro-section .buttons {
+    margin-top: 7rem;
+}
+
+header h2 {
+    color: #ffffff;
+}
+
+.app-brief {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.app-brief .left-align .feature-list li i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.app-brief.eng .left-align {
+    text-align: left;
+}
+
+.eng .colored-line-left {
+    float: left !important;
+}
+
+.app-brief.eng .left-align .feature-list li i {
+    margin-left: 0 !important;
+    margin-right: 10px;
+}
+
+.app-brief .phone-image {
+    margin-top: 40px;
+    max-width: 100% !important;
+}
+
+.color-overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.navbar-nav>li {
+    float: right;
+}
+
+.colored-line,
+.colored-line-left {
+    background: #008ed6;
+}
+
+.colored-line-left {
+    float: right !important;
+}
+
+.app-brief .left-align {
+    text-align: right;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.app-brief .left-align .feature-list {
+    margin-top: 0;
+}
+
+ul,
+ol {
+    padding-right: 0 !important;
+}
+
+.app-brief .left-align .feature-list li {
+    margin-bottom: 0;
+}
+
+.standard-button,
+.standard-button2 {
+    font-size: 1.2rem;
+    font-weight: 600 !important;
+    padding: 10px 25px;
+    font-family: OpenSansHebrew-Bold;
+    color: #0949AB;
+}
+
+.download-container {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.emailLink span {
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+
+a.emailLink {
+    display: block;
+    line-height: 1.33;
+    font-weight: 400;
+}
+
+header a.emailLink {
+    color: #ffffff;
+}
+
+a.emailLink i {
+    font-size: 30px;
+    color: #008ed6;
+}
+
+footer .contact-box {
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+form .col-md-6 {
+    float: right;
+}
+
+footer {
+    background-color: #0949AB;
+}
+
+@media (max-width: 799px) {
+    .intro img {
+        width: 280px;
+    }
+}
