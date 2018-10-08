@@ -76,16 +76,16 @@ jQuery(function($) {
 /* =================================
 ===  FULL SCREEN HEADER         ====
 =================================== */
-function alturaMaxima() {
-    var altura = $(window).height();
-    $(".full-screen").css('min-height', altura);
+// function alturaMaxima() {
+//     var altura = $(window).height();
+//     $(".full-screen").css('min-height', altura);
 
-}
+// }
 
-$(document).ready(function() {
-    alturaMaxima();
-    $(window).bind('resize', alturaMaxima);
-});
+// $(document).ready(function() {
+//     alturaMaxima();
+//     $(window).bind('resize', alturaMaxima);
+// });
 
 
 /* =================================

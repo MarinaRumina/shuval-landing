@@ -11,6 +11,7 @@
 body {
     direction: rtl;
     line-height: 24px;
+    padding-top: 5rem;
 }
 
 body * {
@@ -44,6 +45,12 @@ navbar {
     top: 0 !important;
 }
 
+.navbar-default,
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    background-color: #ffffff;
+}
+
 .intro-section {
     background-color: blue;
 }
@@ -59,6 +66,15 @@ header .intro-section .buttons {
 
 header h2 {
     color: #ffffff;
+}
+
+#logoContacts,
+#logoContacts a {
+    color: #ffffff;
+}
+
+.top-image {
+    background-color: #0949aa;
 }
 
 .app-brief {
@@ -106,27 +122,23 @@ header h2 {
     float: right !important;
 }
 
-.app-brief .left-align {
-    text-align: right;
-}
-
 hr {
     margin-top: 30px;
     margin-bottom: 10px;
     border-top: 1px solid #e5e5e5;
 }
 
-.app-brief .left-align .feature-list {
-    margin-top: 0;
+#logoContacts {
+    vertical-align: middle;
+}
+
+#services h2 {
+    text-align: center;
 }
 
 ul,
 ol {
     padding-right: 0 !important;
-}
-
-.app-brief .left-align .feature-list li {
-    margin-bottom: 0;
 }
 
 .standard-button,
@@ -136,11 +148,6 @@ ol {
     padding: 10px 25px;
     font-family: OpenSansHebrew-Bold;
     color: #0949AB;
-}
-
-.download-container {
-    margin-top: 80px;
-    margin-bottom: 20px;
 }
 
 .emailLink span {
@@ -163,6 +170,12 @@ a.emailLink i {
     color: #008ed6;
 }
 
+.service-image {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
 footer .contact-box {
     margin-top: 70px;
     margin-bottom: 60px;
@@ -173,11 +186,44 @@ form .col-md-6 {
 }
 
 footer {
-    background-color: #0949AB;
+    background-color: #0949aa;
+    color: #ffffff;
 }
 
+footer a,
+footer h2 {
+    color: #ffffff;
+}
+
+footer .colored-line,
+footer .colored-line-left {
+    background: #ffffff;
+}
+
+
+/* .app-brief .left-align {
+    text-align: right;
+} */
+
+
+/* .app-brief .left-align .feature-list {
+    margin-top: 0;
+} */
+
+
+/* .app-brief .left-align .feature-list li {
+    margin-bottom: 0;
+} */
+
+
+/* 
+.download-container {
+    margin-top: 80px;
+    margin-bottom: 20px;
+} */
+
 @media (max-width: 799px) {
-    .intro img {
+    /* .intro img {
         width: 280px;
-    }
+    } */
 }
