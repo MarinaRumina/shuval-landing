@@ -11,7 +11,7 @@
 body {
     direction: rtl;
     line-height: 24px;
-    padding-top: 5rem;
+    padding-top: 75px;
 }
 
 body * {
@@ -41,18 +41,28 @@ strong {
     direction: ltr;
 }
 
-navbar {
-    top: 0 !important;
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand {
+    padding-top: 0;
+}
+
+.navbar>.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-default {
+    border: none;
 }
 
 .navbar-default,
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     background-color: #ffffff;
-}
-
-.intro-section {
-    background-color: blue;
 }
 
 .intro-section h2 {
@@ -68,9 +78,31 @@ header h2 {
     color: #ffffff;
 }
 
+#logoContacts {
+    padding-right: 25px;
+}
+
 #logoContacts,
 #logoContacts a {
     color: #ffffff;
+}
+
+#logoContacts>img {
+    margin-top: 2.5rem;
+}
+
+#logoContacts>div {
+    margin-top: 1.4rem;
+}
+
+#logoContacts span:last-of-type,
+#logoContacts span:last-of-type>a {
+    font-weight: bold;
+}
+
+#logoContacts span:first-of-type,
+#logoContacts span:first-of-type>a {
+    padding-right: 0;
 }
 
 .top-image {
@@ -78,7 +110,7 @@ header h2 {
 }
 
 .app-brief {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 
@@ -130,6 +162,8 @@ hr {
 
 #logoContacts {
     vertical-align: middle;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 #services h2 {
@@ -185,6 +219,23 @@ form .col-md-6 {
     float: right;
 }
 
+.contacts {
+    padding-top: 120px;
+}
+
+.contacts>div>div {
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.contacts * {
+    text-align: center;
+}
+
 footer {
     background-color: #0949aa;
     color: #ffffff;
@@ -200,27 +251,20 @@ footer .colored-line-left {
     background: #ffffff;
 }
 
+footer .copyright {
+    color: #ffffff;
+    text-align: center;
+}
 
-/* .app-brief .left-align {
-    text-align: right;
-} */
-
-
-/* .app-brief .left-align .feature-list {
-    margin-top: 0;
-} */
-
-
-/* .app-brief .left-align .feature-list li {
-    margin-bottom: 0;
-} */
-
-
-/* 
-.download-container {
-    margin-top: 80px;
-    margin-bottom: 20px;
-} */
+@media (min-width: 768px) {
+    /* .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -28px;
+    }
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -28px;
+    } */
+}
 
 @media (max-width: 799px) {
     /* .intro img {
