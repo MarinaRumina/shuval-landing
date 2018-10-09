@@ -78,6 +78,14 @@ header h2 {
     color: #ffffff;
 }
 
+.logo-desktop {
+    display: none;
+}
+
+.logo-mobile {
+    display: block;
+}
+
 #logoContacts {
     padding-right: 25px;
 }

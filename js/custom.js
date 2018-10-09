@@ -160,9 +160,9 @@ $('.expand-form').simpleexpand({
 /* =================================
 ===  STELLAR                    ====
 =================================== */
-$(window).stellar({
-    horizontalScrolling: false
-});
+// $(window).stellar({
+//     horizontalScrolling: false
+// });
 
 
 /* =================================
