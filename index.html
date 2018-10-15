@@ -250,16 +250,28 @@
 
                             <!-- IF MAIL SENT SUCCESSFULLY -->
                             <h4 class="success" role="alert">
-                                <i class="icon_check"></i> ההודעה נשלחה בהצלחה!
+                                ההודעה נשלחה בהצלחה!
                             </h4>
 
                             <!-- IF MAIL SENDING UNSUCCESSFULL -->
-                            <h4 class="error" role="alert">
-                                <i class="icon_error-circle_alt"></i> דוא"ל אמור להיות נכון וההודעה ערוכה מאות אחד.
-                            </h4>
+                            <div class="error">
+                                <h4 class="notValidEmail" role="alert">
+                                    דוא"ל אמור להיות נכון.
+                                </h4>
+                                <h4 class="notValidName" role="alert">
+                                    השם אמור להיות ערוך מאות אחד.
+                                </h4>
+                                <h4 class="notValidMessage" role="alert">
+                                    ההודעה אמורה להיות ערוכה מאות אחד.
+                                </h4>
+                                <h4 class="sendingFail" role="alert">
+                                    ההודעה לא נשלחה. נא לנסות שנית.
+                                </h4>
+                            </div>
+
 
                             <div class="col-md-6 col-xs-12">
-                                <input class="form-control input-box" id="name" type="text" name="name" placeholder="שם:" aria-label="נה להקליד שם">
+                                <input class="form-control input-box" id="name" type="text" name="name" placeholder="שם:" aria-label="נה להקליד שם" aria-required="true">
                             </div>
 
                             <div class="col-md-6 col-xs-12">
@@ -271,7 +283,7 @@
                                 <textarea class="form-control textarea-box" id="message" rows="8" placeholder="הודעה:" aria-label="נה להקליד את ההודעה" aria-required="true"></textarea>
                             </div>
 
-                            <button class="btn standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">שליחה</button>
+                            <button class="btn standard-button2" type="submit" id="submit" name="submit" data-style="expand-left">שליחה</button>
 
                         </form>
                         <!-- /END FORM -->

@@ -6,6 +6,8 @@ if (matchMedia('(max-width: 991px)').matches) {
     });
 }
 
+
+
 /* =================================
 ===  CONTACT FORM          ====
 =================================== */
@@ -22,7 +24,23 @@ $("#contact").submit(function(e) {
         return pattern.test(emailAddress);
     };
 
-    if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
+    function validate(email, message, name) {
+
+        if (!isValidEmail(email)) {
+            $('.notValidEmail').show();
+            $("#email").addClass('notValidField');
+        }
+        if (!(message.length > 1)) {
+            $('.notValidMessage').show();
+            $("#message").addClass('notValidField');
+        }
+        if (!(name.length > 1)) {
+            $('.notValidName').show();
+            $("#name").addClass('notValidField');
+        }
+    }
+
+    if (validate(email, message, name)) {
         $.ajax({
             type: "POST",
             url: "sendmail.php",
@@ -30,6 +48,13 @@ $("#contact").submit(function(e) {
             success: function() {
                 $('.success').fadeIn(1000);
                 $('.error').fadeOut(500);
+            },
+            error: function(jqXHR, exception) {
+                console.log(jqXHR.responseText);
+
+                $('.sendingFail').show();
+                $('.error').fadeIn(1000);
+                $('.success').fadeOut(500);
             }
         });
     } else {

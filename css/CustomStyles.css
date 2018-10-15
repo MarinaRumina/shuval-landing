@@ -266,6 +266,17 @@
             background-color: transparent;
         }
         
+        .notValidEmail,
+        .notValidMessage,
+        .notValidName,
+        .sendingFail {
+            display: none;
+        }
+        
+        .notValidField {
+            background-color: #fabdbd;
+        }
+        
         @media (max-width: 799px) {
             #logoPic img {
                 width: 100%;
