@@ -249,26 +249,26 @@
                         <form class="contact-form" id="contact" role="form">
 
                             <!-- IF MAIL SENT SUCCESSFULLY -->
-                            <h4 class="success">
+                            <h4 class="success" role="alert">
                                 <i class="icon_check"></i> ההודעה נשלחה בהצלחה!
                             </h4>
 
                             <!-- IF MAIL SENDING UNSUCCESSFULL -->
-                            <h4 class="error">
-                                <i class="icon_error-circle_alt"></i> דוא"ל אמור ליות נכון וההודעה ערוכה מאות אחד.
+                            <h4 class="error" role="alert">
+                                <i class="icon_error-circle_alt"></i> דוא"ל אמור להיות נכון וההודעה ערוכה מאות אחד.
                             </h4>
 
                             <div class="col-md-6 col-xs-12">
-                                <input class="form-control input-box" id="name" type="text" name="name" placeholder="שם:">
+                                <input class="form-control input-box" id="name" type="text" name="name" placeholder="שם:" aria-label="נה להקליד שם">
                             </div>
 
                             <div class="col-md-6 col-xs-12">
-                                <input class="form-control input-box" id="email" type="email" name="email" placeholder='דוא"ל:'>
+                                <input class="form-control input-box" id="email" type="email" name="email" placeholder="דוא&#8221ל:" aria-label="נה להקליד דואר אלקטרוני" aria-required="true">
                             </div>
 
                             <div class="col-md-12 col-xs-12">
-                                <input class="form-control input-box" id="subject" type="text" name="subject" placeholder="נושא:">
-                                <textarea class="form-control textarea-box" id="message" rows="8" placeholder="הודעה:"></textarea>
+                                <input class="form-control input-box" id="subject" type="text" name="subject" placeholder="נושא:" aria-label="נה להקליד נושא">
+                                <textarea class="form-control textarea-box" id="message" rows="8" placeholder="הודעה:" aria-label="נה להקליד את ההודעה" aria-required="true"></textarea>
                             </div>
 
                             <button class="btn standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">שליחה</button>
@@ -301,7 +301,7 @@
                             </div>
 
                             <div class="col-xs-6">
-                                <img src="img/mail.png" alt='דוא"ל'>
+                                <img src="img/mail.png" alt="דוא&#8221ל">
                                 <p>דוא"ל</p>
                                 <a href="mailto:avi@shuval-ins.co.il" class="emailLink">avi@shuval-ins.co.il</a>
                             </div>
@@ -337,14 +337,9 @@
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.localScroll.min.js"></script>
-    <script src="js/simple-expand.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/retina.min.js"></script>
     <script src="js/jquery.nav.js"></script>
     <script src="js/matchMedia.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/jquery.fitvids.js"></script>
     <script src="js/custom.js"></script>
 </body>

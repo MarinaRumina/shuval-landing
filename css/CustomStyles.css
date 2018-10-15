@@ -11,7 +11,7 @@
         body {
             direction: rtl;
             line-height: 24px;
-            padding-top: 75px;
+            padding-top: 70px;
         }
         
         body * {
@@ -37,13 +37,9 @@
             font-family: 'OpenSansHebrew-Bold';
         }
         
-        .eng * {
-            direction: ltr;
-        }
-        
         .navbar {
             padding-top: 10px;
-            /* padding-bottom: 15px; */
+            padding-bottom: 10px;
         }
         
         .navbar-brand {
@@ -144,10 +140,9 @@
             margin-top: 40px;
             max-width: 100% !important;
         }
-        
-        .color-overlay {
+        /* .color-overlay {
             background: rgba(0, 0, 0, 0);
-        }
+        } */
         
         .navbar-nav>li {
             float: right;
@@ -250,6 +245,8 @@
         }
         
         footer a,
+        footer a:hover,
+        footer a:visited,
         footer h2 {
             color: #ffffff;
         }
@@ -300,7 +297,7 @@
             }
             .navbar-header {
                 float: none;
-                padding-bottom: 10px;
+                /* padding-bottom: 10px; */
             }
             .navbar-toggle {
                 display: block;
