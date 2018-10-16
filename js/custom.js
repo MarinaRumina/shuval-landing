@@ -18,8 +18,8 @@ $('input, textarea').blur(function() {
 
 function validateField(field) {
 
+    var isValid;
 
-    // TODO return value
     var validationMessage = '';
 
     if ($(field).attr('id') == 'email') {
@@ -30,10 +30,10 @@ function validateField(field) {
 
             if (isValidEmail($(field).val())) {
                 console.log('Email is valid');
-                defineFieldAsValid($(field), validationMessage);
+                isValid = defineFieldAsValid($(field), validationMessage);
             } else {
                 console.log('Email is not valid');
-                defineFieldAsNotValid($(field), validationMessage);
+                isValid = defineFieldAsNotValid($(field), validationMessage);
             }
         }
     }
@@ -45,10 +45,10 @@ function validateField(field) {
 
         if ($(field).val().length < 1) {
             console.log('Name is not valid');
-            defineFieldAsNotValid($(field), validationMessage);
+            isValid = defineFieldAsNotValid($(field), validationMessage);
         } else {
             console.log('Name is valid');
-            defineFieldAsValid($(field), validationMessage);
+            isValid = defineFieldAsValid($(field), validationMessage);
         }
     }
 
@@ -60,24 +60,29 @@ function validateField(field) {
         if ($(field).val().length < 1) {
 
             console.log('message is not valid');
-            defineFieldAsNotValid($(field), validationMessage);
+            isValid = defineFieldAsNotValid($(field), validationMessage);
         } else {
 
             console.log('message is valid');
-            defineFieldAsValid($(field), validationMessage);
+            isValid = defineFieldAsValid($(field), validationMessage);
         }
     }
 
+    return isValid;
 };
 
 function defineFieldAsValid(field, validationMessage) {
     $(field).removeClass('notValidField');
     $(validationMessage).hide();
+
+    return true;
 }
 
 function defineFieldAsNotValid(field, validationMessage) {
     $(validationMessage).show();
     $(field).addClass('notValidField');
+
+    return false;
 }
 
 function isValidEmail(emailAddress) {
@@ -127,8 +132,8 @@ $("#contact").submit(function(e) {
             }
         });
     } else {
-
         console.log('not sent');
+
         $('.error').fadeIn(1000);
         $('.success').fadeOut(500);
     }
