@@ -26,9 +26,9 @@ function validateField(field) {
 
         validationMessage = '.notValidEmail';
 
-        if ($(field).val().length > 0) {
+        if ($(field).val().length >= 0) {
 
-            if (isValidEmail($(field).val())) {
+            if (($(field).val().length > 0) && isValidEmail($(field).val())) {
                 console.log('Email is valid');
                 isValid = defineFieldAsValid($(field), validationMessage);
             } else {
